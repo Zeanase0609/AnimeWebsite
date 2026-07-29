@@ -1,0 +1,13 @@
+.hero-banner {
+    background-color: red;
+}
+
+.hero-img {
+    width: 50px;
+}
+
+.hero-title {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
