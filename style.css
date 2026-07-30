@@ -59,20 +59,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    margin: auto;
-    padding: 50px;
-    align-items: center;
-}
-
-.content2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin: auto;
     padding: 50px;
     align-items: center;
     position: relative;
-    min-height: 482px; 
+    min-height: auto; 
     z-index: 0;
     overflow: hidden;
 }
@@ -86,4 +76,18 @@
   background-position: center; 
   opacity: 0.2; 
   z-index: -1; 
+}
+
+.content-title {
+    background: linear-gradient(to bottom,#FF0000, #DB223D);
+    height: 139px;
+    position: relative;
+}
+
+.title-text {
+    color: white;
+    font-size: 128px;
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+    font-weight: bold;
 }
