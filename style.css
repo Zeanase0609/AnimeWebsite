@@ -72,7 +72,7 @@
     padding: 50px;
     align-items: center;
     position: relative;
-    min-height: 482px; /* Gives the section height */
+    min-height: 482px; 
     z-index: 0;
     overflow: hidden;
 }
@@ -80,10 +80,10 @@
 .content2::before {
   content: "";
   position: absolute;
-  inset: 0; /* Stretches to fit the section */
+  inset: 0; 
   background-image: url('Images/Manga_Panel_Bg1.jpg');
-  background-size: cover; /* Crops image to fill section */
-  background-position: center; /* Centers the image */
-  opacity: 0.2; /* Sets the opacity */
-  z-index: -1; /* Places it behind text */
+  background-size: cover; 
+  background-position: center; 
+  opacity: 0.2; 
+  z-index: -1; 
 }
