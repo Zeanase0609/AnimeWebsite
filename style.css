@@ -24,3 +24,31 @@
     font-size: 128px;
     font-family: 'Istok Web', sans-serif;
 }
+
+.content1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+    background-color: #B9B9B9;
+}
+
+.content1-text {
+    color: black;
+    font-size: 24px;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    width: 589px;
+}
+
+.content1-img {
+    width: 589px;
+    height: auto;
+}
+
+.section-cut-off {
+    background: linear-gradient(to bottom,#FF0000 90%, #DB223D);
+    height: 63px;
+}
