@@ -35,15 +35,17 @@
     background-color: #B9B9B9;
 }
 
-.content1-text {
+.content-text {
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Istok Web', sans-serif;
     text-align: left;
     width: 589px;
+    font-weight: bold;
+    line-height: 29px;
 }
 
-.content1-img {
+.content-img {
     width: 589px;
     height: auto;
 }
@@ -51,4 +53,37 @@
 .section-cut-off {
     background: linear-gradient(to bottom,#FF0000 90%, #DB223D);
     height: 63px;
+}
+
+.content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+}
+
+.content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+    position: relative;
+    min-height: 482px; /* Gives the section height */
+    z-index: 0;
+    overflow: hidden;
+}
+
+.content2::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Stretches to fit the section */
+  background-image: url('Images/Manga_Panel_Bg1.jpg');
+  background-size: cover; /* Crops image to fill section */
+  background-position: center; /* Centers the image */
+  opacity: 0.2; /* Sets the opacity */
+  z-index: -1; /* Places it behind text */
 }
