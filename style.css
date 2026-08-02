@@ -80,8 +80,9 @@
 
 .content-title {
     background: linear-gradient(to bottom,#FF0000, #DB223D);
-    height: 139px;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .title-text {
@@ -90,4 +91,28 @@
     font-family: 'Istok Web', sans-serif;
     text-align: center;
     font-weight: bold;
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    background-color: #3C3C3C;
+}
+
+.anime-img {
+    gap: 20px;
+    height: 439px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.anime-item {
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Istok Web', sans-serif;
 }
