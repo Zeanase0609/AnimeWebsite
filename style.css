@@ -120,11 +120,26 @@
 }
 
 .anime-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+
+.anime-text {
     text-align: center;
+    text-decoration: none;
     color:white;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Istok Web', sans-serif;
+}
+
+.anime-text:hover {
+    color: #FF0000;
+    transition: color 0.3s ease;
 }
 
 .links-section {
@@ -200,4 +215,9 @@
     font-family: 'Istok Web', sans-serif;
     font-weight: bold;
     color: white;
+}
+
+.links:hover {
+    color: #3C3C3C;
+    transition: color 0.3s ease;
 }
