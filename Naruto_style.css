@@ -27,3 +27,34 @@
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
+.content1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+    background-color: #B9B9B9;
+    place-items: center;
+}
+
+.content-text {
+    color: black;
+    font-size: 27px;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    width: 785.333px;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+.content-img {
+    width: 785.333px;
+    height: auto;
+}
+
+.section-cut-off {
+    background: linear-gradient(to right, #8803CA, #F2AE3F);
+    height: 63px;
+}
