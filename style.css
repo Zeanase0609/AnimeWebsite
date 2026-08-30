@@ -53,6 +53,7 @@
 .content-img {
     width: 785.333px;
     height: auto;
+    border-radius: 10px;
 }
 
 .section-cut-off {
@@ -195,6 +196,7 @@
 .links-img {
     width: 266px;
     height: auto;
+    border-radius: 10px;
 }
 
 .links-item {

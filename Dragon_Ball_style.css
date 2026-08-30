@@ -35,7 +35,7 @@
     margin: auto;
     padding: 50px;
     align-items: center;
-    background-color: #B9B9B9;
+    background-color: #e6e6e6;
     place-items: center;
 }
 
@@ -57,4 +57,20 @@
 .section-cut-off {
     background: linear-gradient(to bottom,#F9DA81, #F5BB56);
     height: 63px;
+}
+
+.content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    position: relative;
+    place-items: center;
+    background-color: #B9B9B9;
+}
+
+.creator-img {
+    height: 440px;
+    border-radius: 10px;
 }
