@@ -257,4 +257,6 @@
     .links-item {
         grid-template-columns: 1fr; 
     }
+    .content-text { font-size: min(4.5vw, 24px); }
+    .anime-text { font-size: min(5vw, 26px); }
 }
