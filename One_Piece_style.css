@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .hero-title {
     color: white;
-    font-size: 170px;
+    font-size: 150px;
     font-family: 'Istok Web', sans-serif;
-    padding:20px;
+    padding: 20px;
 }
 
 .hero-banner {
@@ -14,12 +20,13 @@
     align-items: center;    
     margin: 0;
     opacity: 0.9;
+    height: 30vh;
 }
 
 .return-icon {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 0.5rem;
+    left: 0.5rem;
     width: 50px;
 }
 
@@ -41,21 +48,24 @@
 
 .content-text {
     color: black;
-    font-size: 27px;
+    font-size: auto;
     font-family: 'Istok Web', sans-serif;
     text-align: left;
-    width: 785.333px;
+    font-size: 22px;
+    max-width: 785.333px;
+    width: 100%;
     font-weight: bold;
-    line-height: 29px;
 }
 
 .content-img {
-    width: 785.333px;
+    max-width: 785.333px;
+    width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .section-cut-off {
-    background: linear-gradient(to bottom,#DC908F 90%, #D27474);
+    background: linear-gradient(to bottom,#DC908F, #D27474);
     height: 63px;
 }
 
@@ -71,6 +81,97 @@
 }
 
 .creator-img {
-    height: 440px;
+    max-height: 440px;
+    height: 100%;
+    width: auto;
     border-radius: 10px;
+}
+
+.title-text {
+    color: white;
+    font-size: clamp(32px, 5vw, 66px);
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 40px 20px;
+}
+
+.content3-banner {
+    background: linear-gradient(to bottom,#DC908F, #D27474);
+    position: relative;
+    margin: 0;
+}
+
+.anime-grid {
+    background-color: #3C3C3C;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.anime-img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.anime-text {
+    color: white;
+    font-size: clamp(20px, 3vw, 40px);
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.anime-text:hover {
+    color: #DC908F;
+    transition: color 0.3s ease;
+}
+
+.anime-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .content1, .content2, .anime-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .content-text {
+        font-size: min(6vw, 18px);
+    }
+
+    .anime-text {
+        font-size: min(7.5vw, 24px);
+    }
+
+
+    .creator-img, .anime-img, .content-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: min(15vw, 80px);
+    }
+
+    .title-text {
+        font-size: min(10vw, 40px);
+    }
+
+    .return-icon {
+        width: min(25px, 5vw);
+    }
 }
