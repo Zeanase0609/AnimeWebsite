@@ -258,6 +258,7 @@
     transition: color 0.3s ease;
 }
 
+/* Change the size of objects on the page when the screen shrinks */
 
 @media (max-width: 768px) {
 

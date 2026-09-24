@@ -142,6 +142,8 @@
     width: 100%;
 }
 
+/* Change the size of objects on the page when the screen shrinks */
+
 @media (max-width: 768px) {
 
     .content1, .content2, .anime-grid {
